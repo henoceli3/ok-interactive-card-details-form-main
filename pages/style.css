@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ------------------------------------------------------------------------------------------------------------------- */
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Space Grotesk,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.index-1{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+.part-one{
+    width: 40%;
+    height: 100%;
+    background: url(../images/bg-main-desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.part-two{
+    width: 60%;
+    height: 100%;
+}
+
+
+.index-2{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.face-one{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: tomato; */
+}
+.card{
+    width: 70%;
+    height: 40%;
+    border-radius: 10px;
+}
+
+.card-1{
+    background: url(../images/bg-card-front.png);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:hsl(0, 0%, 100%);
+    text-transform: uppercase;
+}
+.fff{
+    width: 90%;
+    height: 90%;
+}
+.line{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+.line-one{
+    width: 100%;
+    height: auto;
+}
+.line-one img{
+    height: 3em;
+}
+.line-two{
+    margin-top: 2em;
+    width: 100%;
+    height: auto;
+}
+.line-two p{
+    font-size: 2em;
+}
+.line-three{
+    margin-top: 1em;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+.sss{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.card-2{
+    background: url(../images/bg-card-back.png);
+    background-position: center;
+    background-size: cover;
+    margin-left: 12em;
+}
+
+
+.face-two{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.confirme{
+    width: 60%;
+    height: 30%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.confirme h2{
+    font-family: Space Grotesk,Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+}
+.confirme p{
+    color: hsl(279, 6%, 55%);
+}
+
+
+.button-confirme{
+    margin-top: 1em;
+    height: 3em;
+    width: 60%;
+    display: flex;
+}
+.button-confirme button{
+    width: 100%;
+    height: 100%;
+    background: hsl(278, 68%, 11%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+
+.formulaire{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.input-container{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+.label{
+    font-weight: bold;
+    font-size: 0.8em;
+    color: hsl(278, 68%, 11%);
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-family: Space Grotesk,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.input-card-number,.input-name{
+    width: 100%;
+    height: 3em;
+    border: solid 2px  hsl(270, 3%, 87%);
+    border-radius: 5px;
+}
+.input-card-number:hover,.input-name:hover{
+    border: solid 2px  hsl(279, 6%, 55%);
+}
+.input-card-number::placeholder,.input-name::placeholder{
+    font-size: 1.2em;
+   text-align: center;
+}
+
+
+.input-container-line{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.input-double{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.input-double-label{
+    font-weight: bold;
+    font-size: 0.8em;
+    color: hsl(278, 68%, 11%);
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-family: Space Grotesk,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.input-mois-date-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.input-mois,.input-year{
+    width: 40%;
+    height: 2em;
+    border-radius: 5px;
+    border: solid 2px  hsl(270, 3%, 87%);
+}
+.input-mois:hover,.input-year:hover{
+    border: solid 2px  hsl(279, 6%, 55%);
+}
+
+.input-cvc-container{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.input-cvc-label{
+    font-weight: bold;
+    font-size: 0.8em;
+    color: hsl(278, 68%, 11%);
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-family: Space Grotesk,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.input-cvc{
+    width: 70%;
+    height: 2em;
+    border-radius: 5px;
+    border: solid 2px  hsl(270, 3%, 87%);
+    /* margin-left: 2em; */
+}
+.input-cvc:hover{
+    border: solid 2px  hsl(279, 6%, 55%);
+}
+.error-message{
+    color: hsl(0, 100%, 66%);
+    font-size: 0.8em;
+    font-family: Space Grotesk,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button-confirme-inform{
+    width: 100%;
+    height: 3em;
+    margin-top: 1em;
+}
+.button-confirme-inform button{
+    width: 100%;
+    height: 100%;
+    background: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+
+/* :root{
+    --hauteur-une:55vh;
+    --hauteur-deux: 100vh;
+    --hauteur-trois : 70vh;
+    --hauteur-quatre: 80vh;
+    --hauteur-index-2:var(--hauteur-trois)+var(--hauteur-quatre);
+} */
+@media (max-width:376px) {
+    body{
+        height: 150vh; 
+
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+    .index-1{
+        flex-direction: column;
+        height: 150vh;
+    }
+    .part-one{
+        width: 100%;
+        height: 40%;
+    }
+    .part-two{
+        width: 100%;
+        height: 60%;
+    }
+
+    .index-2{
+        flex-direction: column;
+    }
+
+
+    .face-one{
+        width: 100%;
+        height: 50%;
+        flex-direction: column-reverse;
+        /* background: tomato; */
+    }
+
+
+    .card{
+        width: 85%;
+        height: 38vh;
+    }
+
+    .card-1{
+        margin-bottom: 0em;
+        top: 9em;
+        right: 3em;
+        z-index: 6;
+        position: absolute;
+    }
+    .line-two{
+        margin-top: 0;
+        margin-top: 2em;
+    }
+    .line-two p{
+        font-size: 1.2em;
+    }
+    .line-three p{
+        font-size: 0.9em;
+    }
+
+
+    .card-2{
+        margin-left: 3em;
+        bottom: 4em;
+        z-index: 5;
+        position: relative;
+    }
+
+
+    .face-two{
+        width: 100%;
+        height: 50%;
+        /* background: hsl(0, 100%, 66%); */
+    }
+
+    .confirme{
+        height: auto;
+        width: 90%;
+    }
+
+
+    .formulaire{
+        width: 90%;
+    }
+    .button-confirme{
+        width: 90%;
+    }
+}
