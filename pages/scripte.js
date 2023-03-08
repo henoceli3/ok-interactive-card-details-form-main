@@ -99,7 +99,6 @@ reloadButon.addEventListener("click", function(event){
             }else if(testMois == false || testYear == false){
                 errorMoisYearCard.innerHTML = "wrong format, numbers only";
             }
-            // errorMoisYearCard.innerHTML = "mauvais format, les chiffres uniquement";
         }
     }
 });
